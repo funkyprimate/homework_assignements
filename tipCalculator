@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Tip Calculator</title>
+<style>
+
+</style>
+<script>
+function tipPrcnt (bill, button){
+var amount = document.getElementById('amount');
+var prcnt = document.getElementById('prcnt');
+var bill = document.getElementById('bill').value
+var calculate = button * 0.1;
+if (calculate === prcnt){
+	amount.innerHTML = bill * 0.15; 
+	}else{
+	NaN	
+		}
+ 	
+	}
+</script>
+</head>
+<body>
+<h1>The 15% tip calulator</h1>
+<h2>Enter the bill amount here</h2>
+<input type="number" id="bill" min="1" value="1">
+
+<h2>Now push the button to calculate the tip</h2>
+<input type="button" id="prcnt" onClick="tipPrcnt('')" value="Push Me!">
+<h3>The amount of your tip is $<br /><span id="amount"></span></h3>
+</body>
+</html>
